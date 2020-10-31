@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
+<div class="container-fluid">
 
   <!-- bacground animation -->
-    <div id="particles-js"></div>
+  <div id="particles-js"></div>
 
   <!-- side nav bar-->    
   <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" style="color: tomato;" onclick="closeNav()">&times;</a>
       <a href="#">About</a>
       <a href="services.html">Services</a>
       <a href="#">Projects</a>
@@ -29,35 +30,37 @@
     <span style="color: rgb(243, 239, 239); top:50px; left:40px; position: relative; z-index:2; display: flex; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     <!-- about and image section -->
-    <div class="container mt-5">
+    <div class="container banner mt-5 mb-5">
       <Section id="home" class="row">
-        <div class="col-6">
+        <div class="col-sm-6 mr-5">
             <h4>Hello I'm</h4>
             <h1>Muhammad Abdus Samad</h1>
-            <p>A passionate person who never stops learning, always crave for new challenges in life, very much into adventures, likes to travel and watch movies. Currently dived down into the technology around graphic design and web development.</p>
+            <p class="text-sm-left text-wrap">A passionate person who never stops learning, always crave for new challenges in life, very much into adventures, likes to travel and watch movies. Currently dived down into the technology around graphic design and web development.</p>
             <button type="button" class="btn btn-success">
               <a target="_blank" class="link-color" href="https://drive.google.com/file/d/1BzmzbCN2Xn6vS4KZ-Y6ZZtxIEY7LXVdf/view?usp=sharing">Download Resume</a>
             </button>
         </div>
-        <div class="col-3"> 
-            <img src="profile1.png" alt="">
+        <div class="col-sm-3"> 
+            <img class="img-fluid" src="profile1.png" alt="">
         </div>
       </Section>
     </div>
+    <br>
+    <br>
     <!-- footer section -->
-    <section class="container">
-    <div class="row justify-content-center">
-      <div class="col-1 footer">
+    <section class="mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm-1 footer">
         <a href="https://www.linkedin.com/in/samadshamim/" target="_blank">
           <img class="img-fluid" src="linkedin.png" alt="">
         </a>
       </div>
-      <div class="col-1 footer">
+      <div class="col-sm-1 footer">
         <a href="https://github.com/developer-shamim" target="_blank">
           <img class="img-fluid" src="github.png" alt="">
         </a>
       </div>
-      <div class="col-1 footer">
+      <div class="col-sm-1 footer">
         <a href="https://web.facebook.com/profile.php?id=726865337" target="_blank">
           <img class="img-fluid" src="facebook.png" alt="">
         </a>
@@ -69,6 +72,9 @@
     </section>
 
   <!-- JavaScript; codes goes here! -->
+
+</div>
+  
     <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";

@@ -1,27 +1,33 @@
 *
 {
+    background-color: royalblue;
     font-family: 'Montserrat', sans-serif;
     margin:0;
     padding: 0;
 }
 
 #particles-js{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(image4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     position: absolute;
     display: flex;
     width: 100%;
     z-index: 0;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
+    left:-10px;
     background-position: center;
 }
 
+.banner{
+  background-color: transparent;
+  z-index: 2;
+}
 
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 8;
     top: 20px;
     right: 0;
     background-color: transparent;
@@ -34,7 +40,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: gainsboro;
+    color: tomato;
     margin-top: 25px;
     display: block;
     transition: 0.3s;
@@ -46,10 +52,12 @@
   
   .sidenav .closebtn {
     position: absolute;
+    z-index: 9;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: tomato;
   }
 
   h1 {
@@ -80,7 +88,7 @@ p {
 }
 
 .footer{
-  z-index: 4;
+  z-index: 9;
   position: relative;
   text-align: center;
 }
