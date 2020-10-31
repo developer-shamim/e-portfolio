@@ -7,7 +7,7 @@
 }
 
 #particles-js{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(rgba(230, 11, 157, 0.637), rgba(219, 7, 7, 0.5));
     position: absolute;
     display: flex;
     width: 100%;
@@ -27,8 +27,8 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 8;
-    top: 20px;
+    z-index: 9;
+    top: 10px;
     right: 0;
     background-color: transparent;
     overflow-x: hidden;
@@ -61,7 +61,7 @@
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 2vw;
     color: tomato;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -69,7 +69,7 @@
 
   h4 {
     top: 120px;
-    font-size: 24px;
+    font-size: 3vw;
     color: white;
 }
 
@@ -77,7 +77,7 @@ p {
     color: gainsboro;
     line-height: 32px;
     margin-bottom: 60px;
-    font-size: 20px;
+    font-size: 1.5vw;
     }
 
 .link-color {
@@ -87,8 +87,30 @@ p {
     font-weight: bold;
 }
 
+.service-title {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 10;
+}
+
+.text-center{
+  font-size: 2vw;
+  color: tomato;
+}
+
+.text-title{
+  font-size: 1.5vw;
+  color: tomato;
+}
+
+.carousel-photo{
+  width: 1200px;
+  height: 550px;
+}
+
 .footer{
-  z-index: 9;
+  z-index: 7;
   position: relative;
   text-align: center;
 }
@@ -96,6 +118,16 @@ p {
 .footer img{
   height: 65px;
   width: 65px;
+}
+
+.footer-area{
+  height: 567px;
+  width:101%;
+  margin-top: 50px;
+  background-color: #FBD062;
+}
+.submit{
+  width: 120px;
 }
   
   @media screen and (max-height: 450px) {

@@ -7,6 +7,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -22,9 +24,8 @@
       <a href="services.html">Services</a>
       <a href="#">Projects</a>
       <a href="cv.html">Profile</a>
-      <a href="#">Achievements</a>
       <a href="blog.html">Blogs</a>
-      <a href="https://forms.gle/Ysqsj2GY62opgLETA">Contact</a>
+      <a href="https://forms.gle/Ysqsj2GY62opgLETA" target="_blank">Contact</a>
     </div>
     
     <span style="color: rgb(243, 239, 239); top:50px; left:40px; position: relative; z-index:2; display: flex; font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -47,33 +48,178 @@
     </div>
     <br>
     <br>
+    
     <!-- footer section -->
-    <section class="mt-5">
-    <div class="row d-flex justify-content-center">
-      <div class="col-sm-1 footer">
-        <a href="https://www.linkedin.com/in/samadshamim/" target="_blank">
-          <img class="img-fluid" src="linkedin.png" alt="">
-        </a>
+    <div class="container"> 
+      <section class="mt-3">
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-1 footer mr-2">
+          <a href="https://www.linkedin.com/in/samadshamim/" target="_blank">
+            <img class="img-fluid" src="linkedin.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-1 footer mr-2">
+          <a href="https://github.com/developer-shamim" target="_blank">
+            <img class="img-fluid" src="github.png" alt="">
+          </a>
+        </div>
+        <div class="col-sm-1 footer mr-2">
+          <a href="https://web.facebook.com/profile.php?id=726865337" target="_blank">
+            <img class="img-fluid" src="facebook.png" alt="">
+          </a>
+        </div>
       </div>
-      <div class="col-sm-1 footer">
-        <a href="https://github.com/developer-shamim" target="_blank">
-          <img class="img-fluid" src="github.png" alt="">
-        </a>
-      </div>
-      <div class="col-sm-1 footer">
-        <a href="https://web.facebook.com/profile.php?id=726865337" target="_blank">
-          <img class="img-fluid" src="facebook.png" alt="">
-        </a>
-      </div>
+      </section>
+    </div> 
 
-
+    <!-- services on offer-->
+    <div class="container mb-5 service-title">
+      <h4 class="text-center"> Provide Services </h4>
     </div>
-      
-    </section>
+        
+      <div class="card-deck mr-4 ml-4">
+      <div class="card">
+        <img src="mern.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-title">Web Development</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://forms.gle/Ysqsj2GY62opgLETA" target="_blank">
+          <button type="button" class="btn btn-success">Contact Me</button>
+        </a>
+        </div>
+      </div>
+    <div class="card">
+      <img src="ui-ux.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-title">UI & UX Design</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://forms.gle/Ysqsj2GY62opgLETA" target="_blank">
+        <button type="button" class="btn btn-success">Contact Me</button>
+      </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="gd.jpg" class="card-img-top" style="height:238px;" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-title">Graphic Design</h5>
+        <p class="card-text">The art of communication is story telling. The branding design, pixel perfect photo editing will speak to your coustomer intutivie way. Offering high quality flyer, logo, business card, product photo editing.</p>
+      </div>
+      <div class="card-footer">
+        <a href="https://forms.gle/Ysqsj2GY62opgLETA" target="_blank">
+        <button type="button" class="btn btn-success">Contact Me</button>
+      </a>
+      </div>
+    </div>
+  </div>
 
-  <!-- JavaScript; codes goes here! -->
+  <!-- project carousel goes here --> 
+  <div class="container mb-5 service-title">
+    <h4 class="text-center"> Recent Projects </h4>
+  </div>
+
+  <div class="container mt-4 mb-4">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" style="background-color: gray; color: black;">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" style="color: black;" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" style="color: black;" ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" style="color: black;"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="creative.png" class="d-block w-100 carousel-photo" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="background-color: gray;">
+            <h5 style="background-color: gray; color: gold;">MERN Full-Stack Web App: Creative Agency</h5>
+            <p style="background-color: gray; color: purple;">This site is build for an IT services business. It can handle order of customer. Dashboard created for Admin and user access. Database handled in MongoDB and in the back end NodeJS used</p>
+            <a href="https://creative-agency-sam.web.app/" target="_blank">
+              <button type="button" class="btn btn-success"> Live Site</button>
+            </a>
+            <a href="https://github.com/developer-shamim/creative-agency-client" target="_blank">
+              <button type="button" class="btn btn-success"> GitHub</button>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="vol.png" class="d-block w-100 carousel-photo" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="background-color: gray;">
+            <h5 style="background-color: gray; color:gold;">MERN Web App: Volunteer Network</h5>
+            <p style="background-color: gray; color: purple;">This web app develomed to enable volunteer to register at events. Firebase authentication used. Serverside code hosted at Heroko and front-end code hosted at Firebase. </p>
+            <a href="https://volunteer-network-9db3d.web.app/" target="_blank">
+              <button type="button" class="btn btn-success"> Live Site</button>
+            </a>
+            <a href="https://github.com/developer-shamim/volunteer-network-client" target="_blank">
+              <button type="button" class="btn btn-success"> GitHub</button>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="travel.png" class="d-block w-100 carousel-photo" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="background-color: gray;">
+            <h5 style="background-color: gray; color: gold;">React Front-end Website: Travel Turu</h5>
+            <p style="background-color: gray; color: purple;">Travel Guru is a fully functional front end website. It can handle the booking of hotels. Google map used to show the location of hotel to the users. Netlify used for hosting. </p>
+            <a href="https://travel-guru-sam.netlify.app/" target="_blank">
+              <button type="button" class="btn btn-success"> Live Site</button>
+            </a>
+            <a href="https://github.com/developer-shamim/travel-guru" target="_blank">
+              <button type="button" class="btn btn-success"> GitHub</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
 
 </div>
+  <!--footer section-->
+  
+  <div class="w3-black w3-center w3-padding-24">
+    <div class="container-fluid mt-5 pt-5 row d-flex" style="background-color: black;" >
+      <div class="col-md-4 ml-5 mt-5 mr-auto" style="background-color: black;">
+          <h3 style="background-color: black;"  class="mb-3 pl-5">Let us handle your projects, professionally</h3>
+          <p style="background-color: black;" class="mt-3 pl-5"> Email: samad.sham@gmail.com</p>
+          <p style="background-color: black;" class="mt-3 pl-5"> Call: +88 01730446335</p>
+      </div>
+  
+      <div style="background-color: black;" class="col-md-6 mt-4 ml-auto">
+          <form>
+          <div style="background-color: black;" class="form-group">
+              <input style="background-color: black;" class="form-control mt-3" type="email" placeholder="Your Email Address"/>
+          </div>
+              
+          <div style="background-color: black;" class="form-group">    
+              <input style="background-color: black;" class="form-control mt-4" type="text" placeholder=" Your Name / Company Name"/>
+          </div>
+          
+          <div style="background-color: black;" class="form-group">   
+              <textarea style="background-color: black;" class="form-control mt-4" type="text" placeholder="Your message" id="exampleFormControlTextarea1" rows="4"></textarea>
+          </div>
+          
+              <button type="submit" class="btn btn-dark mt-4 text-white submit"> Send</button>
+  
+          </form>
+  
+      </div>
+      
+  </div>
+    
+    <p style="background-color: black;" class="mt-5 mb-1">All right reserved by Muhammad Abdus Samad - 2020</p></div>
+
+<!-- HTML code Ends -->
+
+
+  <!-- JavaScript; codes goes here! -->
   
     <script>
     function openNav() {
